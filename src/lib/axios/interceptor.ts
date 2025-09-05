@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { toast } from "sonner";
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
+  baseURL: "https://randomuser.me/api",
 });
 
 api.interceptors.request.use(
